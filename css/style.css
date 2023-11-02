@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*GOOGLE字形CSS語法*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Open Sans', sans-serif;
+}
+/* *******共用區*********** */
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+.input-group-text ,.form-control{
+    background-color: #598987;
+ }
+
+
+/* *******登入*********** */
+#login_input .jumbotron{
+    background:url(../pictures/login_background-1.jpg);
+    /*失真圖片  使其剛好符合投放區SIZE*/
+    background-size: cover;
+    /*不重複圖片*/
+    background-repeat: no-repeat;
+    /*圖片置中 故50%*/
+    background-position: 50%;
+    height:80vh;
+    margin-bottom: 0px;
+    position: relative;
+    box-shadow:3px 3px 12px gray;padding:3px;
+}
+
+#login_input  h1{
+    font-size:50px;
+    text-align: center;
+    margin: 50px auto 150px;
+}
+
+#login_input .input-group{
+    width: 25%;
+    margin: 20px auto;
+}
+
+#login_input .btn-primary{
+    background: #77A88D;
+    border: #77A88D;
+    display: flex;
+    margin: 50px auto;
+}
+
+#login_input .btn:hover{
+    background: #77A88D;
+    border: #77A88D;
+    opacity: 0.8;
+    color: #FFD000;
+}
+
+/* *********登入失敗*********** */
+#login_fail .login_fail_p{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+#login_fail .Login_fail_div{
+    
+    margin-top: 200px;
+    height:40vh;
+    box-shadow:3px 3px 12px gray;padding:3px;
+    background-color: #FF6670;
+}
+
+#login_fail .Login_fail_div img{
+    height: 80px;
+    display: table;
+    margin: 20px auto;
+}
+/* *********首頁*********** */
+.navbar{
+    float: left;
+    font-size: 30px;
+    width: 250px;
+    background-color: #77A88D;
+    height: 900px;
+}
+
+.container p{
+    font-size: 30px;
+    text-align: right;
+    border-bottom: #77A88D 1px solid;
+    padding: 20px;
+}
